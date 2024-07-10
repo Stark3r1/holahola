@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro-box" id="introBox">
+            <div class="intro-content">
+                <h2>Bienvenido</h2>
+                <p>Presiona abajo para ver la galería de imágenes.</p>
+            </div>
+        </div>
+        <h1 id="showGalleryBtn">Presiona Aquí Y Verás Cuanto Te Amo</h1>
+        <p>Luego Apreta Cada Una De Las Imágenes.</p>
+        <div class="gallery" id="gallery">
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Fecha.jpg" alt="Descripción de la imagen 1">
+                    <div class="overlay-text">
+                        <p>Me Encanta Lo Que Tenemos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Sacartefotos.jpg" alt="Descripción de la imagen 2">
+                    <div class="overlay-text">
+                        <p>Me Gusta Tomarte Fotos, Me Alegra El Corazón</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Contacto.jpg" alt="Descripción de la imagen 2">
+                    <div class="overlay-text">
+                        <p>Amo Tener Contacto Contigo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Colegio 1.jpg" alt="Descripción de la imagen 2">
+                    <div class="overlay-text">
+                        <p>Me Da Felicidad Tenerte A Mi Lado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Foto2 copy.jpg" alt="Descripción de la imagen 2">
+                    <div class="overlay-text">
+                        <p>Tus Besos Me Llenan El Alma, Me Encantan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-overlay" onclick="toggleDescription(this)">
+                    <img src="Momentos.jpg" alt="Descripción de la imagen 2">
+                    <div class="overlay-text">
+                        <p>Amo Los Pequeños Momentos Que Pasamos Juntos, Valen Más Que Cualquier Otra Cosa</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

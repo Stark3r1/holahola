@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recuerdos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+    
+</head>
+
+</html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recuerdos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {                    
+            font-size: 2em;
+            margin-bottom: 20px;
+        }   
+        .profiles {
+            display: flex;
+            justify-content: center;
+        }
+        .profile {
+            margin: 0 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+        .profile p {
+            margin-top: 10px;   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">¿Quien Eres?</div>
+        <div class="profiles">
+            <div class="profile" id="profile1">
+                <img src="Holayo.jpg" alt="Yohel" onclick="mostrarTexto(this)">
+                <p>Yohel</p>
+            </div>
+            <div class="profile" id="profile2">
+                <img src="Holaella.jpg" alt="Greynest" onclick="redirigirPagina()">
+                <p>Greynest</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recuerdos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="heart-animation">
+        <div class="heart"></div>
+        <div class="heart-animation">
+            <img src="corazon.png" alt="Corazón" class="heart-img">
+    <script>
+        // JavaScript para mostrar el contenido principal después de la animación
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(() => {
+                document.querySelector('.heart-animation').style.display = 'none';
+                document.querySelector('.container').classList.remove('hidden');
+            }, 3000); // Ajusta la duración a la duración de la animación
+        });
+    </script>
+</body>
+</html>

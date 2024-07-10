@@ -1,0 +1,98 @@
+/* estilos.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+}
+
+.heart-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    z-index: 9999; /* Asegura que esté sobre todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-img {
+    width: 500px; /* Ajusta el tamaño de acuerdo a tu imagen */
+    height: auto; /* Mantiene la proporción */
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.container {
+    text-align: center;
+    opacity: 1; /* Asegura que el contenido sea visible al final */
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #ffd900;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.profile:hover img {
+    border-color: #ffd900;
+    transform: scale(1.0);
+}
+
